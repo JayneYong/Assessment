@@ -1,0 +1,48 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelancer Management</title>
+</head>
+<body>
+    <h1>Freelancer Management</h1>
+
+    <h2>List of Registered Users</h2>
+    <ul id="userList"></ul>
+
+    <h2>Register a New User</h2>
+    <form id="registerForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username"><br>
+
+        <!-- Add input fields for other user attributes (email, phone number, skillsets, hobby) -->
+
+        <button type="submit">Register</button>
+    </form>
+
+    <h2>Update User Details</h2>
+    <form id="updateForm">
+        <label for="userId">User ID:</label>
+        <input type="text" id="userId" name="userId"><br>
+
+        <!-- Add input fields for attributes to update -->
+
+        <button type="submit">Update</button>
+    </form>
+
+    <h2>Delete User</h2>
+    <form id="deleteForm">
+        <label for="deleteUserId">User ID:</label>
+        <input type="text" id="deleteUserId" name="deleteUserId"><br>
+        <button type="submit">Delete</button>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
